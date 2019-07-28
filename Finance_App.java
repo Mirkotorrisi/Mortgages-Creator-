@@ -111,6 +111,7 @@ public class Finance_app {
 				table.addCell("INTEREST QUOTE");
 
 				for(int i = 0; i < accounts.get(n).calculateMortgage()[0].length; i++) {
+				    accounts.get(n).adjustRate();
 				    table.addCell(accounts.get(n).calcDates()[i]);
 					table.addCell(f.format(accounts.get(n).calculateMortgage()[0][i]));
 				    table.addCell(f.format(accounts.get(n).calculateMortgage()[1][i]));
