@@ -23,7 +23,7 @@ public class Finance_app {
 		System.out.println("WELCOME\n\n");
 		List<FinancialAccounts> accounts = new LinkedList<FinancialAccounts>();
 		DecimalFormat f = new DecimalFormat("##.00");
-		String file = "C:\\Users\\Buzo 7\\Desktop\\MortgagesInfo.csv";
+		String file = "C:\\User\\Desktop\\MortgagesInfo.csv";
 
 		List<String[]> newAccounts = utilities.CSV.read(file); 
 		for (String[]accountholders : newAccounts) {
@@ -100,7 +100,7 @@ public class Finance_app {
 				writer.println(accounts.get(n).riskProfile);
 				
 				Document document = new Document();
-				PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\Buzo 7\\Desktop\\mortgages\\"+accounts.get(n).getName()+" Mortgage.pdf"));	 
+				PdfWriter.getInstance(document, new FileOutputStream("C:\\User\\Desktop\\mortgages\\"+accounts.get(n).getName()+" Mortgage.pdf"));	 
 				document.open();
 
 
