@@ -1,7 +1,7 @@
 # Mortgages-Creator-
 Program which asks information to the user, calculates a mortgage and  prints PDF files with each repayment details.
 
-The program needs iText library for Java.
+The program needs iText library for Java and JavaFX for GUI.
 
 It creates a CSV file with informations about the accounts stored. Also, creates a PDF file for each account in it.
 
