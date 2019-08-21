@@ -16,7 +16,7 @@ public class Main extends Application{
 		Button createNew;
 		Button show;
 		Button save;
-		static String file = "C:\\Users\\LuLele\\Desktop\\MortgagesInfo.csv";
+		static String file = "C:\\Users\\Desktop\\MortgagesInfo.csv";
 		static List<FinancialAccounts> accounts = new LinkedList<FinancialAccounts>();
 
 		public static void main(String[] args) {
